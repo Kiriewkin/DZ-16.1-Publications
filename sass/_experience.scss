@@ -1,0 +1,109 @@
+@use "variables";
+
+.experience-container {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.experience {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 30px;
+    margin-bottom: 60px;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.3);
+}
+
+.experience-button {
+    border: none;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36.57px;
+    color: rgba(179, 179, 186, 1);
+    cursor: pointer;
+    background-color: transparent;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    flex-shrink: 0;
+    transition: all 0.3s;
+
+    &:hover {
+        color: rgba(240, 20, 90, 1);
+    }
+}
+
+.experience-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &-title {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24.38px;
+        color: variables.$basic-color;
+        margin-bottom: 30px;
+    }
+
+    &-text {
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 30px;
+        color: variables.$basic-color;
+    }
+}
+
+@media (min-width:768px) {
+    .experience-button {
+        font-size: 38px;
+        line-height: 46px;
+    }
+
+    .experience-description-title {
+        font-size: 30px;
+        line-height: 37px;
+    }
+
+    .experience-container {
+        padding-bottom: 60px;
+    }
+}
+
+@media (min-width:1024px) {
+    .experience-content {
+        display: flex;
+        justify-content: center;
+    }
+
+    .experience {
+        border-right: 4px solid rgba(255, 255, 255, 0.3);
+        flex-direction: column;
+        align-items: flex-end;
+        padding-right: 60px;
+        margin-right: 60px;
+        border-bottom: none;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        overflow-x: visible;
+    }
+
+}
+
+@media (min-width:1440px) {
+    .experience-description {
+        max-width: 581px;
+    }
+
+}
+
+@media (min-width:1920px) {
+    .experience-description {
+        max-width: 861px;
+    }
+}
