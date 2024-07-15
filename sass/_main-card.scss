@@ -8,8 +8,6 @@
     &::before, &::after {
         content: '';
         position: absolute;
-        left: 0;
-        right: 0;
         height: 10px;
         border-radius: 0px 0px 12px 12px;
     }

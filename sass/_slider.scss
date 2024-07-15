@@ -13,6 +13,7 @@
     width: 100%;
     height: 500px;
     border-radius: 12px 12px 0px 0px;
+    object-fit: cover;
 }
 
 .slider-discription {
@@ -88,6 +89,10 @@
         height: 528px;
         border-radius: 12px 0 0 12px;
         width: 400px;
+
+        img {
+            object-fit: cover;
+        }
     }
 
     .slider-discription {
@@ -110,10 +115,6 @@
 }
 
 @media (min-width: 1920px) {
-    .slider-content{
-        height: 298px;
-    }
-
     .man-slider-1 {
         height: 298px;
     }

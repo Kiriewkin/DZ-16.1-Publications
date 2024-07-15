@@ -8,6 +8,15 @@
     background-attachment: fixed;
     padding-top: 30px;
     padding-bottom: 30px;
+    overflow: hidden;
+}
+
+.experience-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
 }
 
 .experience {
@@ -16,8 +25,18 @@
     overflow-x: auto;
     white-space: nowrap;
     padding-bottom: 30px;
-    margin-bottom: 60px;
-    border-bottom: 4px solid rgba(255, 255, 255, 0.3);
+    margin-bottom: 30px;
+    width: calc(100% + 60px);
+
+    &::before {
+        content:'';
+        position: absolute;
+        top: 64px;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color: rgba(255, 255, 255, 0.3);
+    }
 }
 
 .experience-button {
@@ -32,9 +51,18 @@
     margin-bottom: 0px;
     flex-shrink: 0;
     transition: all 0.3s;
+    padding: 0;
 
     &:hover {
         color: rgba(240, 20, 90, 1);
+    }
+
+    &:first-child {
+        margin-left: 30px;
+    }
+
+    &:last-child {
+        padding-right: 30px;
     }
 }
 
@@ -63,6 +91,24 @@
     .experience-button {
         font-size: 38px;
         line-height: 46px;
+
+        &:first-child {
+            margin-left: 60px;
+        }
+
+        &:last-child {
+            padding-right: 60px;
+        }
+    }
+
+    .experience {
+        width: calc(100% + 120px);
+        padding-bottom: 60px;
+        margin-bottom: 60px;
+
+        &::before {
+            top: 104px;
+        }
     }
 
     .experience-description-title {
@@ -79,6 +125,7 @@
     .experience-content {
         display: flex;
         justify-content: center;
+        flex-direction: row;
     }
 
     .experience {
@@ -91,6 +138,22 @@
         padding-bottom: 0px;
         margin-bottom: 0px;
         overflow-x: visible;
+        width: auto;
+
+        &::before {
+            display: none;
+        }
+    }
+
+    .experience-button {
+
+        &:first-child {
+            margin-left: 0px;
+        }
+
+        &:last-child {
+            padding-right: 00px;
+        }
     }
 
 }
