@@ -1,7 +1,4 @@
 .cards {
-    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
-    background-size: cover;
-    background-attachment: fixed;
     padding-bottom: 30px;
     position: relative;
 
@@ -117,16 +114,21 @@
     }
 }
 
+.sponsors {
+    background: white;
+}
+
 .wrapper-sponsor {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    background: white;
+
 }
 
 .sponsor-tittle {
     display: flex;
     justify-content: center;
-    margin-top: 60px;
     margin-bottom: 30px;
     font-size: 14px;
     font-weight: 700;
