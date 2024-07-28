@@ -57,7 +57,3 @@ exports.start = gulp.series(clear,
     gulp.parallel(css, html, copy),
     gulp.parallel(watching, server)
     );
-
-exports.css = css;
-exports.clear = clear;
-exports.copy = copy;
