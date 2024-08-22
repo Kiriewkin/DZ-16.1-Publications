@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background: url('../images/hero-logo.png') no-repeat center center;
+    background: url('./images/hero-logo.png') no-repeat center center;
     background-size: cover;
 }
 
@@ -60,13 +60,13 @@
 }
 
 .menu-icon {
-    background-image: url(../images/menu-button.svg);
+    background-image: url(./images/menu-button.svg);
     width: 32px;
     height: 32px;
     transition: 0.2s;
 
     &:hover {
-        background-image: url(../images/menu-hover.svg);
+        background-image: url(./images/menu-hover.svg);
     }
 }
 
@@ -81,14 +81,14 @@
     display: inline-block;
     width: 42px;
     height: 42px;
-    background-image: url(../images/scroll-button.svg);
+    background-image: url(./images/scroll-button.svg);
     background-repeat: no-repeat;
     background-size: cover;
     transition: 0.2s;
     margin-bottom: 30px;
 
     &:hover {
-        background-image: url(../images/scroll-hover.svg);
+        background-image: url(./images/scroll-hover.svg);
     }
 }
 
@@ -129,14 +129,14 @@
 .facebook-header {
     width: 24px;
     height: 24px;
-    background-image: url(../images/facebook-header.svg);
+    background-image: url(./images/facebook-header.svg);
     background-size: contain;
     background-repeat: no-repeat;
     transition: 0.2s;
 }
 
 .facebook-header:hover {
-    background-image: url(../images/facebook-hover.svg);
+    background-image: url(./images/facebook-hover.svg);
     transform: scale(1.05);
 }
 
