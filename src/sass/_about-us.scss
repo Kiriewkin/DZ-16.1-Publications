@@ -1,0 +1,263 @@
+@use 'variables' as *;
+
+.container-about {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.about-experience {
+    width: auto;
+    border-left: 4px solid rgba(230, 230, 240, 1);
+    padding-left: 30px;
+}
+
+.about-container__title {
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.about-container__text {
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 30px;
+    color: rgba(0, 0, 0, 1);
+
+}
+
+.experience-card__icon {
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-experience {
+    background-image: url(./images/experience.svg);
+}
+
+.icon-clients {
+    background-image: url(./images/clients.svg);
+}
+
+.icon-probono {
+    background-image: url(./images/probono.svg);
+}
+
+.experience-block {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.experience-card__content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.experience-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.experience-card__number {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43.88px;
+    text-align: center;
+    background: linear-gradient(90.13deg, #f0145a .84%, #ef8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.experience-card__description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+    color: $main-color;
+}
+
+.team-container {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+  }
+  
+  .team-image {
+    display: block;
+    width: 100%; 
+    height: auto;
+  }
+  
+  .team-text {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43.88px;
+    letter-spacing: 13px;
+    color: rgba(255, 255, 255, 1);
+  }
+
+.text-content__paragraph {
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 30px;
+    color: $black-color;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.heading-container__title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36.57px;
+    background: linear-gradient(90.13deg, #f0145a .84%, #ef8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.legal-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.bg-slider {
+    background-color: rgba(245, 245, 250, 1);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.title-slider {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17.07px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.image-slider {
+    width: 53px;
+    height: 40px;
+}
+
+.carousel-item {
+    margin-bottom: 30px;
+}
+
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.carousel-indicators {
+    top: 56px;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 16px !important;
+    height: 16px !important;
+    border-radius: 50% !important;
+    background-color: $regular-color !important;
+}
+
+.carousel-bg {
+    width: 100%;
+    min-height: 90px;
+    border-radius: 12px;
+    background-color: $basic-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-indicators {
+    position: static !important;
+}
+
+.carousel .carousel-inner {
+    position: static !important;
+}
+
+@media (min-width:1024px) {
+    .about-text {
+        max-width: 486px;
+        min-height: 470px;
+    }
+
+    .container-about {
+        flex-direction: row;
+        gap: 60px;
+    }
+
+    .about-experience {
+        max-width: 388px;
+        max-height: 322px;
+    }
+
+    .about-container__title {
+        margin-top: 0px;
+    }
+
+    .legal-content {
+        flex-direction: row;
+        gap: 60px;
+    }
+
+    .text-content {
+        max-width: 482px;
+    }
+    
+    .heading-container {
+        max-width: 362px;
+    }
+
+    .heading-container__title {
+        font-size: 38px;
+    }
+}
+
+@media (min-width:1440px) {
+
+    .about-text {
+        min-width: 662px;
+    }
+
+    .text-content {
+        min-width: 658px;
+    }
+}
+
+@media (min-width:1920px) {
+    .team-image {
+        max-height: 438px;
+    }
+
+    .about-text {
+        max-width: 942px;
+        min-height: 274px;
+    }
+
+    .text-content {
+        max-width: 938px;
+    }
+}

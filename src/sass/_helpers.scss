@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 * {
     box-sizing: border-box;
 }
@@ -19,4 +21,8 @@ body {
 
 html {
     scroll-behavior: smooth;
+}
+
+.service-menu-active {
+    color: $accent-color !important;
 }
