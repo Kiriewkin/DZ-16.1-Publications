@@ -1,0 +1,22 @@
+.hero-services {
+    background-image: none;
+    min-height: auto;
+}
+
+.min-h-0vh {
+    min-height: 0vh;
+}
+
+.logo-services {
+    max-width: 170px;
+}
+
+@media (min-width :768px) {
+    .logo-services {
+        max-width: 302px;
+    }
+
+    .highlight-text-mb {
+        margin-bottom: 60px;
+    }
+}
