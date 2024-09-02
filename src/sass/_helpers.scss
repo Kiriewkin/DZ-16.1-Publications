@@ -25,4 +25,5 @@ html {
 
 .service-menu-active {
     color: $accent-color !important;
+    border-bottom: 2px solid $accent-color !important;
 }
