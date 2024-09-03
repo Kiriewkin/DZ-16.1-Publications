@@ -64,3 +64,9 @@
         width: calc(100% - 360px);
     }
 }
+
+@media (min-width:1920px) {
+    .wrapper-services {
+        width: calc(100% - 560px);
+    }
+}

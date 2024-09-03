@@ -128,8 +128,20 @@
     color: $basic-color;
     box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.5);
     border: none;
-
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
+
+.btn-more:hover {
+    transform: scale(1.05);
+    background-color: rgba(0, 133, 255, 1);
+}
+
+.btn-more:active {
+    transform: scale(0.95);
+    background-color: rgba(0, 108, 207, 1);
+}
+
+
 
 @media (min-width:768px) {
     .pub-logo {

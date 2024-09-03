@@ -12,5 +12,6 @@
 @use 'news';
 @use 'about-us';
 @use 'services';
-@use "services-e-commerce";
+@use 'services-e-commerce';
+@use 'contact';
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";

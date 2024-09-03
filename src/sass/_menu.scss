@@ -35,6 +35,10 @@
     background-image: url(./images/close-menu.svg);
     background-size: cover;
     cursor: pointer;
+
+    &:hover {
+        background-image: url(./images/close-hover.svg);
+    }
 }
 
 .menu-list-link {
