@@ -1,0 +1,145 @@
+@use 'variables' as *;
+
+.team-logo {
+    max-width: 142px;
+    height: auto;
+}
+
+.team-cards {
+    display: grid;
+    gap: 30px;
+}
+
+.team-card {
+    display: block; 
+    height: 100%;
+    transition: transform 0.3s ease
+}
+
+.team-card:hover {
+    transform: scale(1.05);
+}
+
+.team-card:hover .team-card-partner {
+    color: rgba(240, 20, 90, 1);
+}
+
+.team-card:hover .arrow-container-team {
+    background-image: url(./images/arrow-right-team-hover.svg);
+}
+
+.team-card-image {
+    width: 100%;
+    height: 300px;
+    border-radius: 12px 12px 0 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.team-card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+.team-card-partner {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.5px;
+    color: $main-color;
+    text-decoration: none !important;
+}
+
+.team-card-job {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: rgba(179, 179, 186, 1);
+    text-decoration: none !important;
+}
+
+.arrow-container-team {
+    width: 32px;
+    height: 32px;
+    background-color: $grayBg-color;
+    border-radius: 50%;
+    background-image: url(./images/arrow-right-team.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.3s;
+}
+
+.team-entry-image {
+    width: 300px;
+    height: 375px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.team-entry-job {
+    color: rgba(179, 179, 186, 1);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+li a.team-entry-job:hover {
+    color: $accent-color !important; /* Цвет при наведении */
+}
+
+
+.team-entry-description {
+    padding: 30px 0px 0px 0px !important;
+    border-top: 4px solid rgba(230, 230, 240, 1);
+}
+
+.team-entry-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+@media (max-width:768px) {
+    .team-entry-image-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width:768px) {
+    .team-logo {
+        max-width: 254px;
+    }
+
+    .team-card-image {
+        height: 400px;
+    }
+
+    .team-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px;
+    }
+
+    .team-entry-image-container {
+        display: flex;
+        gap: 30px;
+    }
+
+    .w-md-50 {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .team-cards {
+        grid-template-columns:repeat(3,1fr)
+    }
+
+    .team-entry-container {
+        gap: 60px;
+    }
+}  
