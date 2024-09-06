@@ -15,8 +15,13 @@ body {
 
 .wrapper {
     width: calc(100% - 60px);
+    max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.wrapper-services {
+    max-width: 1360px;
 }
 
 html {
@@ -48,6 +53,16 @@ html {
     line-height: 26px;
     text-align: left;
     color: $black-color;
+}
+
+.text-h2 {
+    //styleName: H2 / Regular;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36.57px;
+    text-align: left;
+    color: $main-color;
 }
 
 .text-h3 {

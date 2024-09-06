@@ -1,0 +1,80 @@
+@use 'variables' as *;
+
+.publications-entry-image {
+    max-width: 100%;
+    height: 300px;
+    border-radius: 12px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+.publications-entry-ilustraion {
+    width: 315px;
+    height: 195px;
+}
+
+.publications-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.publications-icon a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.publications-icon {
+    position: relative;
+}
+
+
+.publications-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    background-color: $grayBg-color;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.2s;
+
+    &:hover {
+        transform: scale(1.05);
+        background-color: rgba(237, 237, 247, 1);
+    }
+}
+
+.icon-facebook {
+    background-image: url(./images/facebook-publications-entry.svg);
+}
+
+.icon-telegram {
+    background-image: url(./images/telegram-publications.svg);
+}
+
+.icon-linkedin {
+    background-image: url(./images/linkedIn-publications.svg);
+}
+
+.publications-icon-container {
+    display: flex;
+    gap: 10px;
+    padding-top: 30px;
+    border-top: 4px solid rgba(230, 230, 240, 1);
+}
+
+@media (min-width:768px) {
+    .publications-entry-image {
+        height: 500px;
+    }
+    
+    .publications-entry-ilustraion {
+        width: 640px;
+        height: 398px;
+    }
+}
